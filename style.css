@@ -1,0 +1,101 @@
+
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f3f3;
+}
+
+.container {
+    width: 80%;
+    margin: 20px auto;
+}
+
+.button-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    /* background: linear-gradient(90deg, #4a90e2, #903cfa); */
+    background: linear-gradient(200deg, #2671cd 3.33%, purple 70.46%);
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: linear-gradient(90deg, rgb(167, 4, 167), #4a90e2);
+}
+
+.table-container {
+    overflow-x: auto;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    margin-bottom: 60px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+
+td:first-child, th:first-child {
+    background-color: #053e84;
+    color: white;
+    width: 20%;
+}
+
+td:last-child, th:last-child {
+    background-color: purple;
+    color: white;
+}
+
+td:nth-child(2), td:nth-child(3), td:nth-child(4), td:nth-child(5) {
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+tr:nth-child(even) {
+    background-color: #f7f9fc;
+}
+
+thead th {
+    background: linear-gradient(90deg, #053e84, purple);
+    color: white;
+    font-weight: bold
+}
+thead td {
+    background-color: purple!important;
+    color: white!important;
+}
+
+tbody tr:hover {
+    background-color: #e1e8f0;
+    cursor: pointer;
+}
+
+.sum-insured h2 {
+    color: #053e84;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+

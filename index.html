@@ -1,0 +1,1285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Table with Excel Upload/Download</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+
+        
+
+        <div class="button-container">
+            <button onclick="uploadEmployeeData()">Upload Employee Data</button>
+            <button onclick="downloadQuotation()">Download Quotation</button>
+        </div>
+        
+        <!-- first table -->
+
+        <div class="sum-insured">
+            <h2>Sum Insured: 1 Lakh</h2>
+        </div>
+
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>AGE BAND</th>
+                        <th>1st</th>
+                        <th>2nd</th>
+                        <th>3rd</th>
+                        <th>Rest</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td><20</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>21 - 35</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>20</td>
+                    </tr>
+    
+                    <tr>
+                        <td>36 - 45</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>30</td>
+                    </tr>
+                     <tr>
+                        <td>46 - 50</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>40</td>
+                    </tr>
+                    <tr>
+                        <td>51 - 55</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>50</td>
+                    </tr>
+                    <tr>
+                        <td>56 - 60</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>60</td>
+                    </tr>
+                    <tr>
+                        <td>61 - 65</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>70</td>
+                    </tr>
+                    <tr>
+                        <td>66 - 70</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>71 - 75</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>75 - 80</td>
+                        <td>6</td>
+                        <td>2</td>
+                        <td>30</td>
+                        <td>9</td>
+                        <td>49</td>
+                    </tr>
+                    <tr>
+                        <td>80+</td>
+                        <td></td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>1</td>
+                    </tr>
+                    <thead>
+                        <tr>
+                            <td>Total</td>
+                            <td>63</td>
+                            <td>30</td>
+                            <td>11</td>
+                            <td>9</td>
+                            <td>113</td>
+                        </tr>
+                    </thead>
+                   
+                </tbody>
+            </table>
+        </div>
+
+        <!-- second table -->
+
+        <div class="sum-insured">
+            <h2>Sum Insured: 2 Lakh</h2>
+        </div>
+
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>AGE BAND</th>
+                        <th>1st</th>
+                        <th>2nd</th>
+                        <th>3rd</th>
+                        <th>Rest</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td><20</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>21 - 35</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>20</td>
+                    </tr>
+    
+                    <tr>
+                        <td>36 - 45</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>30</td>
+                    </tr>
+                     <tr>
+                        <td>46 - 50</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>40</td>
+                    </tr>
+                    <tr>
+                        <td>51 - 55</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>50</td>
+                    </tr>
+                    <tr>
+                        <td>56 - 60</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>60</td>
+                    </tr>
+                    <tr>
+                        <td>61 - 65</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>70</td>
+                    </tr>
+                    <tr>
+                        <td>66 - 70</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>71 - 75</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>75 - 80</td>
+                        <td>6</td>
+                        <td>2</td>
+                        <td>30</td>
+                        <td>9</td>
+                        <td>49</td>
+                    </tr>
+                    <tr>
+                        <td>80+</td>
+                        <td></td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>1</td>
+                    </tr>
+                    <thead>
+                        <tr>
+                            <td>Total</td>
+                            <td>63</td>
+                            <td>30</td>
+                            <td>11</td>
+                            <td>9</td>
+                            <td>113</td>
+                        </tr>
+                    </thead>
+                   
+                </tbody>
+            </table>
+        </div>
+
+        <!-- third table -->
+
+        <div class="sum-insured">
+            <h2>Sum Insured: 3 Lakh</h2>
+        </div>
+
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>AGE BAND</th>
+                        <th>1st</th>
+                        <th>2nd</th>
+                        <th>3rd</th>
+                        <th>Rest</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td><20</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>21 - 35</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>20</td>
+                    </tr>
+    
+                    <tr>
+                        <td>36 - 45</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>30</td>
+                    </tr>
+                     <tr>
+                        <td>46 - 50</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>40</td>
+                    </tr>
+                    <tr>
+                        <td>51 - 55</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>50</td>
+                    </tr>
+                    <tr>
+                        <td>56 - 60</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>60</td>
+                    </tr>
+                    <tr>
+                        <td>61 - 65</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>70</td>
+                    </tr>
+                    <tr>
+                        <td>66 - 70</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>71 - 75</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>75 - 80</td>
+                        <td>6</td>
+                        <td>2</td>
+                        <td>30</td>
+                        <td>9</td>
+                        <td>49</td>
+                    </tr>
+                    <tr>
+                        <td>80+</td>
+                        <td></td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>1</td>
+                    </tr>
+                    <thead>
+                        <tr>
+                            <td>Total</td>
+                            <td>63</td>
+                            <td>30</td>
+                            <td>11</td>
+                            <td>9</td>
+                            <td>113</td>
+                        </tr>
+                    </thead>
+                   
+                </tbody>
+            </table>
+        </div>
+
+        <!-- forth table -->
+
+        <div class="sum-insured">
+            <h2>Sum Insured: 4 Lakh</h2>
+        </div>
+
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>AGE BAND</th>
+                        <th>1st</th>
+                        <th>2nd</th>
+                        <th>3rd</th>
+                        <th>Rest</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td><20</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>21 - 35</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>20</td>
+                    </tr>
+    
+                    <tr>
+                        <td>36 - 45</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>30</td>
+                    </tr>
+                     <tr>
+                        <td>46 - 50</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>40</td>
+                    </tr>
+                    <tr>
+                        <td>51 - 55</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>50</td>
+                    </tr>
+                    <tr>
+                        <td>56 - 60</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>60</td>
+                    </tr>
+                    <tr>
+                        <td>61 - 65</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>70</td>
+                    </tr>
+                    <tr>
+                        <td>66 - 70</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>71 - 75</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>75 - 80</td>
+                        <td>6</td>
+                        <td>2</td>
+                        <td>30</td>
+                        <td>9</td>
+                        <td>49</td>
+                    </tr>
+                    <tr>
+                        <td>80+</td>
+                        <td></td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>1</td>
+                    </tr>
+                    <thead>
+                        <tr>
+                            <td>Total</td>
+                            <td>63</td>
+                            <td>30</td>
+                            <td>11</td>
+                            <td>9</td>
+                            <td>113</td>
+                        </tr>
+                    </thead>
+                   
+                </tbody>
+            </table>
+        </div>
+
+        <!-- fifth table -->
+
+        <div class="sum-insured">
+            <h2>Sum Insured: 5 Lakh</h2>
+        </div>
+
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>AGE BAND</th>
+                        <th>1st</th>
+                        <th>2nd</th>
+                        <th>3rd</th>
+                        <th>Rest</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td><20</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>21 - 35</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>20</td>
+                    </tr>
+    
+                    <tr>
+                        <td>36 - 45</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>30</td>
+                    </tr>
+                     <tr>
+                        <td>46 - 50</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>40</td>
+                    </tr>
+                    <tr>
+                        <td>51 - 55</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>50</td>
+                    </tr>
+                    <tr>
+                        <td>56 - 60</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>60</td>
+                    </tr>
+                    <tr>
+                        <td>61 - 65</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>70</td>
+                    </tr>
+                    <tr>
+                        <td>66 - 70</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>71 - 75</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>75 - 80</td>
+                        <td>6</td>
+                        <td>2</td>
+                        <td>30</td>
+                        <td>9</td>
+                        <td>49</td>
+                    </tr>
+                    <tr>
+                        <td>80+</td>
+                        <td></td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>1</td>
+                    </tr>
+                    <thead>
+                        <tr>
+                            <td>Total</td>
+                            <td>63</td>
+                            <td>30</td>
+                            <td>11</td>
+                            <td>9</td>
+                            <td>113</td>
+                        </tr>
+                    </thead>
+                   
+                </tbody>
+            </table>
+        </div>
+
+        <!-- sixth table -->
+
+        <div class="sum-insured">
+            <h2>Sum Insured: 6 Lakh</h2>
+        </div>
+
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>AGE BAND</th>
+                        <th>1st</th>
+                        <th>2nd</th>
+                        <th>3rd</th>
+                        <th>Rest</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td><20</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>21 - 35</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>20</td>
+                    </tr>
+    
+                    <tr>
+                        <td>36 - 45</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>30</td>
+                    </tr>
+                     <tr>
+                        <td>46 - 50</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>40</td>
+                    </tr>
+                    <tr>
+                        <td>51 - 55</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>50</td>
+                    </tr>
+                    <tr>
+                        <td>56 - 60</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>60</td>
+                    </tr>
+                    <tr>
+                        <td>61 - 65</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>70</td>
+                    </tr>
+                    <tr>
+                        <td>66 - 70</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>71 - 75</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>75 - 80</td>
+                        <td>6</td>
+                        <td>2</td>
+                        <td>30</td>
+                        <td>9</td>
+                        <td>49</td>
+                    </tr>
+                    <tr>
+                        <td>80+</td>
+                        <td></td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>1</td>
+                    </tr>
+                    <thead>
+                        <tr>
+                            <td>Total</td>
+                            <td>63</td>
+                            <td>30</td>
+                            <td>11</td>
+                            <td>9</td>
+                            <td>113</td>
+                        </tr>
+                    </thead>
+                   
+                </tbody>
+            </table>
+        </div>
+
+        <!-- seven table -->
+
+        <div class="sum-insured">
+            <h2>Sum Insured: 7 Lakh</h2>
+        </div>
+
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>AGE BAND</th>
+                        <th>1st</th>
+                        <th>2nd</th>
+                        <th>3rd</th>
+                        <th>Rest</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td><20</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>21 - 35</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>20</td>
+                    </tr>
+    
+                    <tr>
+                        <td>36 - 45</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>30</td>
+                    </tr>
+                     <tr>
+                        <td>46 - 50</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>40</td>
+                    </tr>
+                    <tr>
+                        <td>51 - 55</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>50</td>
+                    </tr>
+                    <tr>
+                        <td>56 - 60</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>60</td>
+                    </tr>
+                    <tr>
+                        <td>61 - 65</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>70</td>
+                    </tr>
+                    <tr>
+                        <td>66 - 70</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>71 - 75</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>75 - 80</td>
+                        <td>6</td>
+                        <td>2</td>
+                        <td>30</td>
+                        <td>9</td>
+                        <td>49</td>
+                    </tr>
+                    <tr>
+                        <td>80+</td>
+                        <td></td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>1</td>
+                    </tr>
+                    <thead>
+                        <tr>
+                            <td>Total</td>
+                            <td>63</td>
+                            <td>30</td>
+                            <td>11</td>
+                            <td>9</td>
+                            <td>113</td>
+                        </tr>
+                    </thead>
+                   
+                </tbody>
+            </table>
+        </div>
+
+        <!-- eight table -->
+
+        <div class="sum-insured">
+            <h2>Sum Insured: 8 Lakh</h2>
+        </div>
+
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>AGE BAND</th>
+                        <th>1st</th>
+                        <th>2nd</th>
+                        <th>3rd</th>
+                        <th>Rest</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td><20</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>21 - 35</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>20</td>
+                    </tr>
+    
+                    <tr>
+                        <td>36 - 45</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>30</td>
+                    </tr>
+                     <tr>
+                        <td>46 - 50</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>40</td>
+                    </tr>
+                    <tr>
+                        <td>51 - 55</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>50</td>
+                    </tr>
+                    <tr>
+                        <td>56 - 60</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>60</td>
+                    </tr>
+                    <tr>
+                        <td>61 - 65</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>70</td>
+                    </tr>
+                    <tr>
+                        <td>66 - 70</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>71 - 75</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>75 - 80</td>
+                        <td>6</td>
+                        <td>2</td>
+                        <td>30</td>
+                        <td>9</td>
+                        <td>49</td>
+                    </tr>
+                    <tr>
+                        <td>80+</td>
+                        <td></td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>1</td>
+                    </tr>
+                    <thead>
+                        <tr>
+                            <td>Total</td>
+                            <td>63</td>
+                            <td>30</td>
+                            <td>11</td>
+                            <td>9</td>
+                            <td>113</td>
+                        </tr>
+                    </thead>
+                   
+                </tbody>
+            </table>
+        </div>
+
+        <!-- nine table -->
+
+        <div class="sum-insured">
+            <h2>Sum Insured: 9 Lakh</h2>
+        </div>
+
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>AGE BAND</th>
+                        <th>1st</th>
+                        <th>2nd</th>
+                        <th>3rd</th>
+                        <th>Rest</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td><20</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>21 - 35</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>20</td>
+                    </tr>
+    
+                    <tr>
+                        <td>36 - 45</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>30</td>
+                    </tr>
+                     <tr>
+                        <td>46 - 50</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>40</td>
+                    </tr>
+                    <tr>
+                        <td>51 - 55</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>50</td>
+                    </tr>
+                    <tr>
+                        <td>56 - 60</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>60</td>
+                    </tr>
+                    <tr>
+                        <td>61 - 65</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>70</td>
+                    </tr>
+                    <tr>
+                        <td>66 - 70</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>71 - 75</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>75 - 80</td>
+                        <td>6</td>
+                        <td>2</td>
+                        <td>30</td>
+                        <td>9</td>
+                        <td>49</td>
+                    </tr>
+                    <tr>
+                        <td>80+</td>
+                        <td></td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>1</td>
+                    </tr>
+                    <thead>
+                        <tr>
+                            <td>Total</td>
+                            <td>63</td>
+                            <td>30</td>
+                            <td>11</td>
+                            <td>9</td>
+                            <td>113</td>
+                        </tr>
+                    </thead>
+                   
+                </tbody>
+            </table>
+        </div>
+
+        <!-- ten table -->
+
+        <div class="sum-insured">
+            <h2>Sum Insured: 10 Lakh</h2>
+        </div>
+
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>AGE BAND</th>
+                        <th>1st</th>
+                        <th>2nd</th>
+                        <th>3rd</th>
+                        <th>Rest</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td><20</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>21 - 35</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>20</td>
+                    </tr>
+    
+                    <tr>
+                        <td>36 - 45</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>30</td>
+                    </tr>
+                     <tr>
+                        <td>46 - 50</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>40</td>
+                    </tr>
+                    <tr>
+                        <td>51 - 55</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>50</td>
+                    </tr>
+                    <tr>
+                        <td>56 - 60</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>60</td>
+                    </tr>
+                    <tr>
+                        <td>61 - 65</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>70</td>
+                    </tr>
+                    <tr>
+                        <td>66 - 70</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>71 - 75</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>75 - 80</td>
+                        <td>6</td>
+                        <td>2</td>
+                        <td>30</td>
+                        <td>9</td>
+                        <td>49</td>
+                    </tr>
+                    <tr>
+                        <td>80+</td>
+                        <td></td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>1</td>
+                    </tr>
+                    <thead>
+                        <tr>
+                            <td>Total</td>
+                            <td>63</td>
+                            <td>30</td>
+                            <td>11</td>
+                            <td>9</td>
+                            <td>113</td>
+                        </tr>
+                    </thead>
+                   
+                </tbody>
+            </table>
+        </div>
+
+
+    </div>
+
+    <script>
+        function uploadEmployeeData() {
+            const input = document.createElement('input');
+            input.type = 'file';
+            input.accept = '.xls,.xlsx';
+            input.click();
+            input.onchange = (e) => {
+                const file = e.target.files[0];
+                if (file) {
+                    alert("Employee Data Uploaded: " + file.name);
+                }
+            };
+        }
+
+        function downloadQuotation() {
+            const link = document.createElement('a');
+            link.href = 'path-to-your-quotation.xlsx';
+            link.download = 'Quotation.xlsx';
+            link.click();
+        }
+    </script>
+</body>
+</html>
+
